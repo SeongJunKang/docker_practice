@@ -48,5 +48,7 @@ docker exec -it [container명] /bin/bash 혹은 "bash"
 
 ###### [출처: 가장 빨리 만나는 Docker 20장 - 28. run](http://pyrasis.com/book/DockerForTheReallyImpatient/Chapter20/28)
 
-## [tomcat을 이용한 war 배포하기](https://github.com/SeongJunKang/doicker_practice/tree/master/tomcat)
-## [spring boot 배포하기](https://github.com/SeongJunKang/doicker_practice/tree/master/spring_boot)
+## docker로 진행한 내용
+### [tomcat을 이용한 war 배포하기](https://github.com/SeongJunKang/doicker_practice/tree/master/tomcat)
+### [spring boot 배포하기](https://github.com/SeongJunKang/doicker_practice/tree/master/spring_boot)
+### [docker compose를 사용하여 spring boot 배포](https://github.com/SeongJunKang/doicker_practice/tree/master/docker-compose)
