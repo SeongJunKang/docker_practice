@@ -40,7 +40,7 @@ docker-compose --help
 vi docker-compose.yml
 ```
 
-## 5. docker-compose에 서비스명 기재
+## 5. docker-compose 예시(스프링 부트)
 docker compose로 스프링 부트 컨트롤하기<br>
 ```
 version: '3.4'

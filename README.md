@@ -51,4 +51,5 @@ docker exec -it [container명] /bin/bash 혹은 "bash"
 ## docker로 진행한 내용
 ### [tomcat을 이용한 war 배포하기](https://github.com/SeongJunKang/doicker_practice/tree/master/tomcat)
 ### [spring boot 배포하기](https://github.com/SeongJunKang/doicker_practice/tree/master/spring_boot)
-### [docker compose를 사용하여 spring boot 배포](https://github.com/SeongJunKang/doicker_practice/tree/master/docker-compose)
+### [docker compose를 사용하여 spring boot 예시](https://github.com/SeongJunKang/doicker_practice/tree/master/docker-compose)
+### [docker로 jenkins 설치하기](https://github.com/SeongJunKang/doicker_practice/tree/master/jenkins)

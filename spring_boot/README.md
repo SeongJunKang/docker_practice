@@ -33,3 +33,26 @@ docker build -t [이미지명] .
 docker run -itd [이미지명] -p 8080:8080 --name=[컨테이너명] 
 ```
 env를 통해 환경변수를 추가할 수 있습니다.
+
+
+## 5.  docker-compose로 관리하기
+
+```
+version: '3.4'
+
+services:
+  spring-boot-docker:
+    image: spring-boot-docker
+    build:
+      context: /usr/local/docker/spring-boot-docker
+      dockerfile: /usr/local/docker/spring-boot-docker/Dockerfile
+    container_name: spring-boot
+    volumes:
+      - type: bind
+        source: /usr/local/docker/spring-boot-docker/files
+        target: /usr/local/share/files
+    ports:
+      - "8080:8080"
+    environment:
+      SPRING_PROFILES_ACTIVE: production
+```
