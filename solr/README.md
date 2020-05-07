@@ -109,9 +109,9 @@ docker network ls
 ```
 
 자세한 내용을 보고싶으면 아래의 명령어를 사용하면 도커 내부의 ip를 확인할 수 있다.
+web에서 해당 ip를 등록하여 solr 검색을 던질 수 있도록 수정해야한다. 환경변수를 이용해서 사용할 수 도 있다.
 ```
 docker network inspect [name]
 ```
 
 ![docker inspect for network](../img/docker-solr.png)<br>
-
