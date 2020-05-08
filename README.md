@@ -53,3 +53,4 @@ docker exec -it [container명] /bin/bash 혹은 "bash"
 ### [spring boot 배포하기](https://github.com/SeongJunKang/doicker_practice/tree/master/spring_boot)
 ### [docker compose를 사용하여 spring boot 예시](https://github.com/SeongJunKang/doicker_practice/tree/master/docker-compose)
 ### [docker로 jenkins 설치하기](https://github.com/SeongJunKang/doicker_practice/tree/master/jenkins)
+### [Solr 설치 및 spring boot 연동](https://github.com/SeongJunKang/doicker_practice/tree/master/solr)
