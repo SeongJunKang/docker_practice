@@ -1,37 +1,37 @@
 # Docker compose 
-## 0. docker compose¶õ ?
-¿©·¯°³ÀÇ docker container¸¦ ÇÏ³ªÇÏ³ª ´Ù·çÁö¾Ê°í, YAML ÆÄÀÏÀ» ÀÌ¿ëÇÏ¿© ¿©·¯°³ÀÇ ÄÁÅ×ÀÌ³Ê ÇÁ·Î±×·¥À» Á¤ÀÇÇÏ°í ½ÇÇàÇÏ±â À§ÇÑ µµ±¸ÀÔ´Ï´Ù.<br>
-¿©·¯ ÄÁÅ×ÀÌ³ÊÀÇ Á¤º¸¸¦ ±âÀÔÇÏ°í, ¸í·É¾î ÇÏ³ª·Î docker containerÀÇ »óÅÂ¸¦ ´Ù·ê ¼ö ÀÖ½À´Ï´Ù.
+## 0. docker composeëž€ ?
+ì—¬ëŸ¬ê°œì˜ docker containerë¥¼ í•˜ë‚˜í•˜ë‚˜ ë‹¤ë£¨ì§€ì•Šê³ , YAML íŒŒì¼ì„ ì´ìš©í•˜ì—¬ ì—¬ëŸ¬ê°œì˜ ì»¨í…Œì´ë„ˆ í”„ë¡œê·¸ëž¨ì„ ì •ì˜í•˜ê³  ì‹¤í–‰í•˜ê¸° ìœ„í•œ ë„êµ¬ìž…ë‹ˆë‹¤.<br>
+ì—¬ëŸ¬ ì»¨í…Œì´ë„ˆì˜ ì •ë³´ë¥¼ ê¸°ìž…í•˜ê³ , ëª…ë ¹ì–´ í•˜ë‚˜ë¡œ docker containerì˜ ìƒíƒœë¥¼ ë‹¤ë£° ìˆ˜ ìžˆìŠµë‹ˆë‹¤.
 
 ```
-docker-compose up -d  // ¹é±×¶ó¿îµå·Î docker-compose.yml¿¡ ±âÀÔµÈ ¸ðµç ÄÁÅ×ÀÌ³Ê¸¦ ½ÃÀÛÇÑ´Ù.
-docker-compose down  //docker-compose.yml¿¡ ±âÀÔµÈ ¸ðµç ÄÁÅ×ÀÌ³Ê¸¦ Á¾·áÇÑ´Ù.
+docker-compose up -d  // ë°±ê·¸ë¼ìš´ë“œë¡œ docker-compose.ymlì— ê¸°ìž…ëœ ëª¨ë“  ì»¨í…Œì´ë„ˆë¥¼ ì‹œìž‘í•œë‹¤.
+docker-compose down  //docker-compose.ymlì— ê¸°ìž…ëœ ëª¨ë“  ì»¨í…Œì´ë„ˆë¥¼ ì¢…ë£Œí•œë‹¤.
 ```
 
 ## 1. docker compose install
 
-ÀÌ [¸µÅ©](https://docs.docker.com/compose/install/)¸¦ ÅëÇØ docker-compose¸¦ ´Ù¿î·ÎµåÇÏ°í ¼³Ä¡ÇÒ ¼ö ÀÖ½À´Ï´Ù.<br>
-OSº° ¼³Ä¡¹æ¹ýÀÌ ´Ù¸£´Ï È®ÀÎÇÏ¿© ¼³Ä¡¸¦ ÇÕ´Ï´Ù.
+ì´ [ë§í¬](https://docs.docker.com/compose/install/)ë¥¼ í†µí•´ docker-composeë¥¼ ë‹¤ìš´ë¡œë“œí•˜ê³  ì„¤ì¹˜í•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤.<br>
+OSë³„ ì„¤ì¹˜ë°©ë²•ì´ ë‹¤ë¥´ë‹ˆ í™•ì¸í•˜ì—¬ ì„¤ì¹˜ë¥¼ í•©ë‹ˆë‹¤.
 
-¸®´ª½º´Â ´ÙÀ½ ¸í·É¾î¸¦ ÅëÇØ docker-compose¸¦ ´Ù¿î·Îµå ¹Þ½À´Ï´Ù.<br>
-¹öÀüÀº ÃÖ½ÅÈ­ÇÏ¿© ¹Þµµ·Ï ÇÑ´Ù. ÃÖ½Å ¹öÀüÀº ÀÌ [¸µÅ©](https://github.com/docker/compose/releases)¸¦ ÅëÇØ È®ÀÎÇÒ ¼ö ÀÖ½À´Ï´Ù.
+ë¦¬ëˆ…ìŠ¤ëŠ” ë‹¤ìŒ ëª…ë ¹ì–´ë¥¼ í†µí•´ docker-composeë¥¼ ë‹¤ìš´ë¡œë“œ ë°›ìŠµë‹ˆë‹¤.<br>
+ë²„ì „ì€ ìµœì‹ í™”í•˜ì—¬ ë°›ë„ë¡ í•œë‹¤. ìµœì‹  ë²„ì „ì€ ì´ [ë§í¬](https://github.com/docker/compose/releases)ë¥¼ í†µí•´ í™•ì¸í•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤.
 ```
 sudo curl -L "https://github.com/docker/compose/releases/download/1.25.5/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 ```
-## 2. ¼³Ä¡µÈ docker compose »ç¿ëÇÒ ¼ö ÀÖµµ·Ï ±ÇÇÑ º¯°æ
+## 2. ì„¤ì¹˜ëœ docker compose ì‚¬ìš©í•  ìˆ˜ ìžˆë„ë¡ ê¶Œí•œ ë³€ê²½
 ```
 sudo chmod +x /usr/local/bin/docker-compose
 ```
 
-## 3. docker-compose ¹öÀü È®ÀÎ
+## 3. docker-compose ë²„ì „ í™•ì¸
 ```
 $ docker-compose --version
 docker-compose version 1.25.5, build 1110ad01
 ```
 
 
-## 4. docker-compose.yml ÆÄÀÏ »ý¼º
-¾Æ·¡ÀÇ ¸í·É¾î¸¦ »ç¿ëÇÏ¿© commands¸¦ È®ÀÎÇÒ ¼ö ÀÖ½À´Ï´Ù.<br>
+## 4. docker-compose.yml íŒŒì¼ ìƒì„±
+ì•„ëž˜ì˜ ëª…ë ¹ì–´ë¥¼ ì‚¬ìš©í•˜ì—¬ commandsë¥¼ í™•ì¸í•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤.<br>
 ```
 docker-compose --help
 ```
@@ -40,8 +40,8 @@ docker-compose --help
 vi docker-compose.yml
 ```
 
-## 5. docker-compose ¿¹½Ã(½ºÇÁ¸µ ºÎÆ®)
-docker compose·Î ½ºÇÁ¸µ ºÎÆ® ÄÁÆ®·ÑÇÏ±â<br>
+## 5. docker-compose ì˜ˆì‹œ(ìŠ¤í”„ë§ ë¶€íŠ¸)
+docker composeë¡œ ìŠ¤í”„ë§ ë¶€íŠ¸ ì»¨íŠ¸ë¡¤í•˜ê¸°<br>
 ```
 version: '3.4'
 
@@ -60,18 +60,31 @@ services:
       - "8080:8080"
     environment:
       SPRING_PROFILES_ACTIVE: production
+    depends_on:
+      mysql
+  mysql:
+    container_name: mysql
+    image: mysql
+    ports:
+      - "3306"
+    environment:
+      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+      MYSQL_USER: "user"
+      MYSQL_PASSWORD: "password"
+      MYSQL_DATABASE: "database"
 ```
-versionÀº docker composeÀÇ ¹öÀüÀ» ³ªÅ¸³À´Ï´Ù.<br>
-services´Â ½ÇÇàÇÒÄÁÅ×ÀÌ³ÊÀÇ Á¤º¸¸¦ ±âÀÔÇÕ´Ï´Ù.<br>
-- ½ÇÇàµÉ ¼­ºñ½º¸íÀ» ±âÀÔÇÕ´Ï´Ù.<br>
-- image´Â ¼­ºñ½º¸¦ ½ÇÇàÇÒ ¶§ »ç¿ëÇÒ image¸¦ ÀÔ·ÂÇÕ´Ï´Ù.<br>
-- build´Â ÀÌ¹ÌÁö°¡ ¾øÀ» °æ¿ì image¸¦ ºôµåÇÏ¿© ÁøÇàÇÕ´Ï´Ù.<br>
--- context´Â dockerfileÀ» image·Î ºôµåÇÒ ¶§, ÇÊ¿äÇÑ Æú´õ È¤Àº ÆÄÀÏÀÇ À§Ä¡¸¦ ÁöÁ¤ÇÒ ¶§ »ç¿ëÇÕ´Ï´Ù.<br>
--- dockerfileÀº ÇöÀç ºôµåÇÒ ÀÌ¹ÌÁöÀÇ dockerfile °æ·Î¸¦ ÁöÁ¤ÇÕ´Ï´Ù.<br>
-- container_nameÀº ÇöÀç »ç¿ëµÉ ÄÁÅ×ÀÌ³ÊÀÇ ÀÌ¸§À» ÁöÁ¤ÇÕ´Ï´Ù.<br>
-- volumes ´Â ÄÁÅ×ÀÌ³Ê¿Í È£½ºÆ®°£ÀÇ °øÀ¯ÇÒ Æú´õ¸¦ ÁöÁ¤ÇÕ´Ï´Ù.<br>
--- source´Â È£½ºÆ®ÀÇ ÆÄÀÏ È¤Àº Æú´õ °æ·Î¸¦ ÁöÁ¤ÇÕ´Ï´Ù.<br>
--- targetÀº ÄÁÅ×ÀÌ³ÊÀÇ Æú´õ °æ·Î¸¦ ÁöÁ¤ÇÕ´Ï´Ù.<br>
-- ports ´Â [È£½ºÆ® port]:[ÄÁÅ×ÀÌ³Ê port]<br>
-- environment´Â È¯°æº¯¼ö·Î ÄÁÅ×ÀÌ³Ê°¡ µ¿ÀÛÇÒ ¶§ »ç¿ëÇÏ´Â È¯°æº¯¼ö¸¦ ÀÔ·ÂÇÕ´Ï´Ù.<br>
-networkµµ ÀÖ´Âµ¥ ÀÌ´Â ÄÁÅ×ÀÌ³Ê°£ÀÇ ³×Æ®¿öÅ©¿¬°áÀ» À§ÇØ¼­ »ç¿ëÇÕ´Ï´Ù.(¿©±â¼± »ç¿ë¾ÈÇÔ)<br>
+versionì€ docker composeì˜ ë²„ì „ì„ ë‚˜íƒ€ëƒ…ë‹ˆë‹¤.<br>
+servicesëŠ” ì‹¤í–‰í• ì»¨í…Œì´ë„ˆì˜ ì •ë³´ë¥¼ ê¸°ìž…í•©ë‹ˆë‹¤.<br>
+- ì‹¤í–‰ë  ì„œë¹„ìŠ¤ëª…ì„ ê¸°ìž…í•©ë‹ˆë‹¤.<br>
+- imageëŠ” ì„œë¹„ìŠ¤ë¥¼ ì‹¤í–‰í•  ë•Œ ì‚¬ìš©í•  imageë¥¼ ìž…ë ¥í•©ë‹ˆë‹¤.<br>
+- buildëŠ” ì´ë¯¸ì§€ê°€ ì—†ì„ ê²½ìš° imageë¥¼ ë¹Œë“œí•˜ì—¬ ì§„í–‰í•©ë‹ˆë‹¤.<br>
+-- contextëŠ” dockerfileì„ imageë¡œ ë¹Œë“œí•  ë•Œ, í•„ìš”í•œ í´ë” í˜¹ì€ íŒŒì¼ì˜ ìœ„ì¹˜ë¥¼ ì§€ì •í•  ë•Œ ì‚¬ìš©í•©ë‹ˆë‹¤.<br>
+-- dockerfileì€ í˜„ìž¬ ë¹Œë“œí•  ì´ë¯¸ì§€ì˜ dockerfile ê²½ë¡œë¥¼ ì§€ì •í•©ë‹ˆë‹¤.<br>
+- container_nameì€ í˜„ìž¬ ì‚¬ìš©ë  ì»¨í…Œì´ë„ˆì˜ ì´ë¦„ì„ ì§€ì •í•©ë‹ˆë‹¤.<br>
+- volumesëŠ” ì»¨í…Œì´ë„ˆì™€ í˜¸ìŠ¤íŠ¸ê°„ì˜ ê³µìœ í•  í´ë”ë¥¼ ì§€ì •í•©ë‹ˆë‹¤.<br>
+-- sourceëŠ” í˜¸ìŠ¤íŠ¸ì˜ íŒŒì¼ í˜¹ì€ í´ë” ê²½ë¡œë¥¼ ì§€ì •í•©ë‹ˆë‹¤.<br>
+-- targetì€ ì»¨í…Œì´ë„ˆì˜ í´ë” ê²½ë¡œë¥¼ ì§€ì •í•©ë‹ˆë‹¤.<br>
+- portsëŠ” [í˜¸ìŠ¤íŠ¸ port]:[ì»¨í…Œì´ë„ˆ port]<br>
+- environmentëŠ” í™˜ê²½ë³€ìˆ˜ë¡œ ì»¨í…Œì´ë„ˆê°€ ë™ìž‘í•  ë•Œ ì‚¬ìš©í•˜ëŠ” í™˜ê²½ë³€ìˆ˜ë¥¼ ìž…ë ¥í•©ë‹ˆë‹¤.<br>
+- depends_onì€ ì°¸ì¡°í•˜ëŠ” ì»¨í…Œì´ë„ˆëª…ìž…ë‹ˆë‹¤. ì˜ˆì‹œë¡œëŠ” mysql ì»¨í…Œì´ë„ˆë¥¼ ì°¸ì¡°í•˜ì—¬ spring bootë¥¼ ì‹¤í–‰í•œë‹¤ë¼ëŠ” ëœ»ìž…ë‹ˆë‹¤.<br>
+networkë„ ìžˆëŠ”ë° ì´ëŠ” ì»¨í…Œì´ë„ˆê°„ì˜ ë„¤íŠ¸ì›Œí¬ì—°ê²°ì„ ìœ„í•´ì„œ ì‚¬ìš©í•©ë‹ˆë‹¤.(ì—¬ê¸°ì„  ì‚¬ìš©ì•ˆí•¨)<br>
